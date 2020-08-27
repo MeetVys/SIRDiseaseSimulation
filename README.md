@@ -2,6 +2,8 @@
 
 SIR stands for Susceptible, Infected , Recovered. Where a recovered person can not be re-infected.
 The project is made as assignment project graded by Prof. MVP , CSE ,IIT,Hyderabad.
+The project shows the use of file management, event management along with algorithmic approach to SIR Simulation using statistical analysis and priority assignment.
+It is written in C language and used custom Data-structure to increase efficiency both time-wise and memory-wise.
 The Project uses Graph , binary heap's array based implementation for event management.
 It used predifined probability of a certain person getting infected. In the project we create a graph having certain amount of predefined 
 nodes where each node represents a person. 
@@ -15,4 +17,4 @@ we do not process that node's recovery. The number of days a node needs to get w
 The third category is recovered. If a certain node is recovered we simply discard it from any process.
 
 After initialisation of the graph we randomly choose certain amount of nodes and make them infected and then run the simualtion.
-The output.txt file prints the node id of suspected, infected and recovered at the end of each day.
+The output.txt file prints the adjacency matrix of the graph and after that it prints the node id of suspected, infected and recovered at the end of each day.
