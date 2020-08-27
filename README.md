@@ -2,6 +2,8 @@
 
 SIR stands for Susceptible, Infected , Recovered. Where a recovered person can not be re-infected.
 The project is made as assignment project graded by Prof. MVP , CSE ,IIT,Hyderabad.
+The project was individual assignment done durind month of May,2020.
+
 The project shows the use of file management, event management along with algorithmic approach to SIR Simulation using statistical analysis and priority assignment.
 It is written in C language and used custom Data-structure to increase efficiency both time-wise and memory-wise.
 The Project uses Graph , binary heap's array based implementation for event management.
