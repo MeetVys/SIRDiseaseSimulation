@@ -1,7 +1,7 @@
 # SIR_Disease_Simulation
 
 The SIR model is one of the compartmental models in epidemiology, and many models are derivatives of this basic form.
-SIR stands for Susceptible, Infected, Recovered.
+SIR stands for Susceptible, Infected, Recovered. <br>
 The model consists of three compartments:- <br>
           1> S:  The number of susceptible individuals. When a susceptible and an infectious individual come into "infectious contact", the susceptible individual contracts the disease and transitions to the infectious compartment. <br>
           2> I:  The number of infectious individuals. These are individuals who have been infected and are capable of infecting susceptible individuals. <br>
