@@ -1,22 +1,27 @@
 # SIR_Disease_Simulation
 
-SIR stands for Susceptible, Infected , Recovered. Where a recovered person can not be re-infected.
-The project is made as assignment project graded by Prof. MVP , CSE ,IIT,Hyderabad.
-The project was individual assignment done durind month of May,2020.
+The SIR model is one of the compartmental models in epidemiology, and many models are derivatives of this basic form.
+SIR stands for Susceptible, Infected, Recovered.
+The model consists of three compartments:- 
+          1> S:  The number of susceptible individuals. When a susceptible and an infectious individual come into "infectious contact", the susceptible individual contracts the disease and transitions to the infectious compartment.
+          2> I:  The number of infectious individuals. These are individuals who have been infected and are capable of infecting susceptible individuals.
+          3> R:  This compartment may also be called "recovered" or "resistant". It consists of individuals who have developed immune via once becoming infected and then recovered. Now they can not be infected again.
+          
+The project was done under Prof. MVP, CSE, IIT, Hyderabad.
 
-The project shows the use of file management, event management along with algorithmic approach to SIR Simulation using statistical analysis and priority assignment.
+The project shows the use of file management, event management along with the algorithmic approach to SIR Simulation using statistical analysis, probabilistic approach, and priority assignment.
 It is written in C language and used custom Data-structure to increase efficiency both time-wise and memory-wise.
-The Project uses Graph , binary heap's array based implementation for event management.
-It used predifined probability of a certain person getting infected. In the project we create a graph having certain amount of predefined 
-nodes where each node represents a person. 
-The edge represents connection between two persons.
-We further classify a person represented by node in one of three Susceptible, it means a person
-is not yet infected and if he comes in contact with a infected then he might get infected where the probability of getting infected by getting in touch
-is predefined. 
-It is assumed that a person can not get infected in any way other than getting in contact with a infected person.
-The second category is Infected. An infected person takes several days to recover ,if the days required is more than the days of simulation 
-we do not process that node's recovery. The number of days a node needs to get well, we run probability analysis with a predefined probability.
-The third category is recovered. If a certain node is recovered we simply discard it from any process.
+The Project uses Graph, binary heap's array-based implementation for event management.
 
-After initialisation of the graph we randomly choose certain amount of nodes and make them infected and then run the simualtion.
-The output.txt file prints the adjacency matrix of the graph and after that it prints the node id of suspected, infected and recovered at the end of each day.
+Parameters: 1> Probability of infection
+	         2> Probability of Recovery
+                     3> Simulation TIme
+	         4> The community (represented by the undirected graph).
+In the Graph, the node represents a person and the edge represents the connection between two persons (if they can come in contact with each other).
+
+After the initialization of the graph, we randomly choose a certain amount of nodes and make them infected and then run the simulation.
+The output.txt file prints the adjacency matrix of the graph and after that it prints the node id of suspected, infected, and recovered at the end of each day.
+
+We then input it into a graphical representation module created using MATPLOTLIB in Python to show the data visually.
+
+
