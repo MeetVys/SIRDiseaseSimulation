@@ -25,3 +25,6 @@ The output.txt file prints the adjacency matrix of the graph and after that it p
 We then input it into a graphical representation module created using MATPLOTLIB in Python to show the data visually.
 
 
+
+
+ex
