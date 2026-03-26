@@ -29,12 +29,17 @@ body {
 
 .app-header {
   display: flex;
-  align-items: baseline;
-  gap: 14px;
-  padding: 12px 24px;
+  flex-direction: column;
   background: #fff;
   border-bottom: 1px solid #e2e8f0;
   flex-shrink: 0;
+}
+
+.header-top {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding: 12px 24px 0;
 }
 
 .app-header h1 {
@@ -46,6 +51,57 @@ body {
 .subtitle {
   font-size: 0.8rem;
   color: #64748b;
+}
+
+/* ── Tab bar ──────────────────────────────────── */
+
+.tab-bar {
+  display: flex;
+  gap: 0;
+  padding: 0 24px;
+}
+
+.tab-btn {
+  padding: 10px 18px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #64748b;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.tab-btn:hover {
+  color: #334155;
+}
+
+.tab-active {
+  color: #3b82f6;
+  font-weight: 600;
+  border-bottom-color: #3b82f6;
+}
+
+/* ── GitHub header link ───────────────────────── */
+
+.github-link {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #64748b;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: color 0.15s, background 0.15s;
+}
+
+.github-link:hover {
+  color: #0f172a;
+  background: #f1f5f9;
 }
 
 .app-body {
@@ -360,4 +416,255 @@ body {
   border: 1px solid #e2e8f0;
   border-radius: 8px;
   max-width: 100%;
+}
+
+/* ── Info pages (About / How It Works) ─────────── */
+
+.info-page {
+  flex: 1;
+  overflow-y: auto;
+  padding: 32px 24px;
+  background: #f8fafc;
+}
+
+.info-container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.info-section {
+  margin-bottom: 32px;
+}
+
+.info-section h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.info-section p {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: #334155;
+  margin-bottom: 10px;
+}
+
+.info-section code {
+  background: #f1f5f9;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.82rem;
+  color: #475569;
+}
+
+/* ── Compartment diagram ──────────────────────── */
+
+.compartment-diagram {
+  width: 100%;
+  max-width: 580px;
+  margin: 16px auto;
+  display: block;
+}
+
+.compartment-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.compartment-card {
+  padding: 14px;
+  border-radius: 8px;
+  border-left: 4px solid;
+}
+
+.compartment-card h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.compartment-card p {
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.card-s {
+  background: #eff6ff;
+  border-left-color: #3b82f6;
+}
+
+.card-s h3 {
+  color: #1e40af;
+}
+
+.card-i {
+  background: #fef2f2;
+  border-left-color: #ef4444;
+}
+
+.card-i h3 {
+  color: #991b1b;
+}
+
+.card-r {
+  background: #f0fdf4;
+  border-left-color: #22c55e;
+}
+
+.card-r h3 {
+  color: #166534;
+}
+
+/* ── Highlight box ────────────────────────────── */
+
+.highlight-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 14px 0;
+}
+
+.highlight-box h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #334155;
+  margin-bottom: 8px;
+}
+
+.highlight-box p {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: #475569;
+  margin-bottom: 4px;
+}
+
+/* ── Equation box ─────────────────────────────── */
+
+.equation-box {
+  background: #f1f5f9;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 12px 0;
+  text-align: center;
+}
+
+.equation {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #0f172a;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+}
+
+.equation-note {
+  font-size: 0.78rem;
+  color: #64748b;
+  font-style: italic;
+}
+
+/* ── Event diagram ────────────────────────────── */
+
+.event-diagram {
+  width: 100%;
+  max-width: 580px;
+  margin: 16px auto;
+  display: block;
+}
+
+/* ── Parameter table ──────────────────────────── */
+
+.param-table-wrap {
+  overflow-x: auto;
+  margin-top: 12px;
+}
+
+.param-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.param-table th {
+  background: #f1f5f9;
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #334155;
+  border-bottom: 2px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.param-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #475569;
+  line-height: 1.5;
+}
+
+.param-table tr:hover td {
+  background: #f8fafc;
+}
+
+.param-table .param-name {
+  font-weight: 600;
+  color: #0f172a;
+  white-space: nowrap;
+}
+
+.param-table .param-range {
+  font-variant-numeric: tabular-nums;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+.param-table .param-default {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: #3b82f6;
+  white-space: nowrap;
+}
+
+/* ── Source links ─────────────────────────────── */
+
+.source-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.source-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: #0f172a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.source-link:hover {
+  background: #1e293b;
+}
+
+/* ── Info page links ──────────────────────────── */
+
+.info-section a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.info-section a:hover {
+  text-decoration: underline;
 }
