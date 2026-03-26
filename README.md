@@ -1,5 +1,7 @@
 # SIR Disease Simulation
 
+**[Live Demo](https://peaceful-fenglisu-713112.netlify.app/)**
+
 A stochastic, event-driven SIR (Susceptible-Infected-Recovered) epidemic simulation on a random contact network, originally implemented in C and ported to interactive React visualizations.
 
 Project done under **Prof. MVP, CSE, IIT Hyderabad**.
